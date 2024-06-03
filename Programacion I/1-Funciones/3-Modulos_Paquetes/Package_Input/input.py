@@ -1,12 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 from Package_Input.validate import *
 

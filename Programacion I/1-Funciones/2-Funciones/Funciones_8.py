@@ -1,18 +1,7 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-EJERCICIO:
-Funciones Parte I
-
-8|  Diseña una función que calcule la potencia de un número. La función debe recibir la base y el exponente como argumentos y devolver el resultado.
-
-'''
 from Funciones_4 import solicitar_entero
 
 

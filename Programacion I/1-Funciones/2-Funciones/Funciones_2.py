@@ -1,19 +1,6 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
-
-EJERCICIO:
-Funciones Parte I
-
-2|  Crear una función que le solicite al usuario el ingreso de un número flotante y lo retorne.
-4|  Especializar las funciones del punto 1, 2 y 3 para hacerlas reutilizables. Agregar validaciones.
-
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 
 def es_flotante(ingreso):

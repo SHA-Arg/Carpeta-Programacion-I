@@ -1,16 +1,8 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
-EJERCICIO:
-Funciones Parte I
-7|  Define una función que encuentre el máximo de tres números. La función debe 
-aceptar tres argumentos y devolver el número más grande.
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
+
+
 from Funciones_4 import solicitar_entero
 
 

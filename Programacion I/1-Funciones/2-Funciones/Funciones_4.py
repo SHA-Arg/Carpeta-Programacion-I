@@ -1,20 +1,6 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
-
-EJERCICIO:
-Funciones Parte I
-
-4|  Especializar las funciones del punto 1, 2 y 3 para hacerlas reutilizables. Agregar validaciones.
-
-
-'''
-# 1| y 4| Esta función solicita al usuario ingresar un número entero y lo devuelve con validacion.
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 # ESTA FUNCION AYUDA A VALIDAR EL INGRESO DEL USUARIO DENTRO DE LA FUNCION solicitar_entero()
 

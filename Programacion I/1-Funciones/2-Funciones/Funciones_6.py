@@ -1,18 +1,8 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
-EJERCICIO:
-Funciones Parte I
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-6|  Crea una función que verifique si un número dado es par o impar. 
-La función debe imprimir un mensaje indicando si el número es par o impar.
 
-'''
 from Funciones_4 import solicitar_entero
 
 

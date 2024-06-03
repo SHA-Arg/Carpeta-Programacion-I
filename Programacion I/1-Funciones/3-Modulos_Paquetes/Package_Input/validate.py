@@ -1,13 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
-
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 def validar_numero_entero(numero: int, mensaje_error: str, minimo: int, maximo: int, reintentos: int, tipo_dato: str) -> int | None:
 

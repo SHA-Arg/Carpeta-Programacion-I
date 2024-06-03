@@ -1,12 +1,7 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
+
 
 # -----------------------------------------------
 # INICIALIZACION DE VARIABLES

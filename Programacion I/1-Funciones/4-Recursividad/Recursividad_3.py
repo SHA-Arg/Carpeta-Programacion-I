@@ -1,19 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-
-# Realizar una función recursiva que la suma de los dígitos de un número:
-
-    PROTOTIPO:  def sumar_digitos(numero: int)->int:
-                    pass
-
-'''
-
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 def sumar_digitos(numero: int) -> int:
     if numero < 10:

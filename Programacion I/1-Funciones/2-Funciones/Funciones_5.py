@@ -1,18 +1,7 @@
-'''
------------------------------------
-#                                 #
-# Nombre : Sebastian              #
-# Apellido : Hereñu Amaral        #
-# División: 112                   #
-#                                 #
------------------------------------
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-EJERCICIO:
-Funciones Parte I
-
-5|  Escribe una función que calcule el área de un círculo. La función debe recibir el radio como parámetro y devolver el área.
-
-'''
 
 # 5| Esta función calcula el área de un círculo. La función recibe el radio como parámetro y devuelve el área del circulo.
 
