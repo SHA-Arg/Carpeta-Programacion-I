@@ -9,7 +9,8 @@
 
 Enunciado:
 
-La empresa "Recursos Inhumanos" nos ha solicitado desarrollar un software de gestión de empleados para llevar a cabo un control exhaustivo de los mismos.
+La empresa "Recursos Inhumanos" nos ha solicitado desarrollar un software de gestión 
+de empleados para llevar a cabo un control exhaustivo de los mismos.
 
 Datos correspondientes a cada empleado:
 ID
@@ -64,11 +65,11 @@ from Packages.Alumno_funciones import *
 
 def elegir_opcion():
     opcion = input('''MENU
-                1. Ingresar un alumno
-                4. Modificar un alumno
-                5. Eliminar un alumno
-                2. Mostrar todos los alumnos
-                6. Salir
+                1. Ingresar un empleado
+                2. Modificar un empleado
+                3. Eliminar un empleado
+                4. Mostrar todos los empleados
+                5. Salir
                 Elija una opcion: ''')
 
     return opcion
@@ -80,9 +81,7 @@ while True:
     opcion = elegir_opcion()
     match opcion:
         case '1':
-            alumno = crear_alumno(dni=int(input('Ingrese el DNI: ')), nombre=input(
-                'Ingrese el nombre: '), apellido=input('Ingrese el apellido: '), nota=int(input('Ingrese la nota: ')))
-            lista_alumnos.append(alumno)
+            pass
 
         case '2':
             pass
