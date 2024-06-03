@@ -1,15 +1,7 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-Arrays Unidimensionales
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-Escribir una función parecida a la anterior, pero la misma deberá calcular y devolver el promedio de los números positivos.
-'''
 
 # --------------------------------------------------------------------------------
 print("Funcion para calcular promedio de numeros positivos en una lista de enteros.")

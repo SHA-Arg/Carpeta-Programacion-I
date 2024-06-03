@@ -1,19 +1,9 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-Arrays Unidimensionales
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
+# -------------------------
 
 
-Escribir una función que reciba como parámetros una lista de enteros y retorne la posición del valor máximo encontrado.
-
-'''
-
-# --------------------------------------------------------------------------------
 print("Funcion para calcular la posicion del valor maximo en una lista de enteros")
 
 

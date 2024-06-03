@@ -1,16 +1,7 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-Arrays Unidimensionales
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-3°| Escribir una función que calcule y retorne el producto de todos los elementos de la lista que recibe como parámetro.
-
-'''
 
 # --------------------------------------------------------------------------------
 print("Funcion para calcular el producto de los elementos de una lista de enteros")
