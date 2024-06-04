@@ -3,8 +3,8 @@
 # División: 112
 
 
-from funciones_input import solicitar_entero, solicitar_cadena
-from funciones_crud import ingresar_empleado, modificar_empleado, eliminar_empleado, mostrar_todos, calcular_salario_promedio, buscar_empleado_por_dni, ordenar_empleados
+from funciones_input import solicitar_cadena, solicitar_entero
+from funciones_crud import ingresar_empleado, buscar_empleado_por_dni, calcular_salario_promedio, eliminar_empleado, modificar_empleado, mostrar_todos, ordenar_empleados
 
 
 def menu_principal():
