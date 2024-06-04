@@ -1,6 +1,4 @@
-"""
 
-"""
 
 from os import system
 from Package.class_video import Video
