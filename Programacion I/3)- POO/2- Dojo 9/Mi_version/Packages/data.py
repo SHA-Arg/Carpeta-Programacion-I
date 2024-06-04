@@ -1,14 +1,8 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
-from Packages.class_video import *
+from .class_video import Video
 
 lista_videos = [
     Video("Trueno | Sesión #1", 25000000, 210,
