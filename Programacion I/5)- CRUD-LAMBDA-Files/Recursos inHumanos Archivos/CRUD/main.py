@@ -4,7 +4,7 @@
 
 from os import system
 from Packages.funciones_input import *
-from Packagtes.funciones_crud import *
+from Packages.funciones_crud import *
 
 
 def menu_principal():
