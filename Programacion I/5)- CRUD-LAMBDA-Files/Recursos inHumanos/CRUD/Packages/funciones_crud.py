@@ -1,5 +1,5 @@
-from funciones_input import solicitar_cadena, solicitar_entero
-from funciones_validate import *
+from .funciones_input import *
+from .funciones_validate import *
 
 
 def ingresar_empleado(empleados, id_actual):
