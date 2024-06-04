@@ -2,7 +2,7 @@
 # Apellido : Hereñu Amaral
 # División: 112
 
-from Package_Input.validate import *
+from Package_Input.validate import validar_numero_entero, validar_numero_flotante, validar_cadena
 
 
 def get_int(numero: int, mensaje_error: str, minimo: int, maximo: int, reintentos: int, tipo_dato: str) -> int | None:

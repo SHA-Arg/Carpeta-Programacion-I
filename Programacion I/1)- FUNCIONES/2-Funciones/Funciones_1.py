@@ -5,22 +5,17 @@
 from Funciones_4 import es_entero
 
 
-def solicitar_entero():
-    """ Solicita al usuario ingresar un número entero
-    Args:
-        None
-    Returns:
-        int: El número entero ingresado por el usuario.  
-    """
+def solicitar_retornar_entero() -> int:
     while True:
         entrada = input("Ingrese un numero: ")
+        entrada = int(entrada)
         if es_entero(entrada):
-            return int(entrada)
+            return entrada
         else:
             print("!#! Por favor, introduzca un número entero válido.\n")
 
 
 # Prueba de la funcion 1|
-numero = solicitar_entero()
+numero = solicitar_retornar_entero()
 print(f"\n<#> El numero ingresado es: {numero}\n")
 print("--------------------------------------------------------------------------\n")
