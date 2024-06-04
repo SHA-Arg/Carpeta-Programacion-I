@@ -1,15 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-
 Enunciado:
 
-La empresa "Recursos Inhumanos" nos ha solicitado desarrollar un software de gestión 
+La empresa "Recursos Inhumanos" nos ha solicitado desarrollar un software de gestión
 de empleados para llevar a cabo un control exhaustivo de los mismos.
 
 Datos correspondientes a cada empleado:
@@ -41,12 +32,14 @@ Modificar empleado: Permitirá alterar cualquier dato del empleado excepto su ID
 Eliminar empleado: Eliminará permanentemente a un empleado de la lista original. Se pedirá el ID del empleado a eliminar.
 Mostrar todos: Imprimirá por consola la información de todos los empleados en formato de tabla:
 
-****************************************************
-|    Nombre    |   Apellido   |      Puesto      |    Salario     |
+---
+
+| Nombre | Apellido | Puesto | Salario |
 —-----------------------------------------------------------
-|    German    |   Scarafilo  |     Gerente      |   $500.000 |
-|   Giovanni    | Lucchetta  |  Supervisor    |  $300.000 |
-****************************************************
+| German | Scarafilo | Gerente | $500.000 |
+| Giovanni | Lucchetta | Supervisor | $300.000 |
+
+---
 
 Calcular salario promedio: Calculará e imprimirá el salario promedio de todos los empleados.
 Buscar empleado por DNI: Permitir al usuario buscar y mostrar la información de un empleado específico ingresando su DNI.
@@ -57,44 +50,3 @@ Requisitos adicionales:
 
 El programa deberá estar correctamente modularizado, haciendo uso de módulos, paquetes y funciones propias para solicitar enteros, flotantes y cadenas, así como para las validaciones de cada uno de estos tipos de datos.
 El código debe estar programado de manera eficiente y siguiendo buenas prácticas de la programación y las reglas de estilo de la cátedra.
-
-'''
-from os import system
-from Packages.Alumno_funciones import *
-
-
-def elegir_opcion():
-    opcion = input('''MENU
-                1. Ingresar un empleado
-                2. Modificar un empleado
-                3. Eliminar un empleado
-                4. Mostrar todos los empleados
-                5. Salir
-                Elija una opcion: ''')
-
-    return opcion
-
-
-lista_alumnos = []
-
-while True:
-    opcion = elegir_opcion()
-    match opcion:
-        case '1':
-            pass
-
-        case '2':
-            pass
-        case '4':
-            system('cls')
-            print('Modificar un alumno')
-            pass
-        case '5':
-            system('cls')
-            print('Eliminar un alumno')
-            pass
-        case '6':
-            break
-        case _:
-            system('cls')
-            print('Opcion invalida')
