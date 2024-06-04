@@ -5,7 +5,7 @@
 
 # 5| Esta función calcula el área de un círculo. La función recibe el radio como parámetro y devuelve el área del circulo.
 
-from Funciones_4 import solicitar_entero
+from Funciones_1 import solicitar_entero
 
 
 def calcular_area_circulo(radio):

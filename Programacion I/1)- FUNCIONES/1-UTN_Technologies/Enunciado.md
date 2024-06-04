@@ -1,15 +1,14 @@
                 #######  UTN TECHNOLOGIES  #########
 
-UTN Technologies, una reconocida software factory se encuentra en la búsqueda
-de ideas para su próximo desarrollo en Python, que promete revolucionar
-el mercado.
+UTN Technologies, una reconocida software factory se encuentra en la búsqueda de ideas para su próximo desarrollo en Python, que promete revolucionar el mercado.
 
 ---
 
 Las posibles aplicaciones son las siguientes:
-Inteligencia artificial(IA),
-Realidad virtual/aumentada(RV/RA),
-Internet de las cosas(IOT)
+
+- Inteligencia artificial(IA),
+- Realidad virtual/aumentada(RV/RA),
+- Internet de las cosas(IOT)
 
 ---
 
@@ -19,10 +18,12 @@ con el propósito de conocer ciertas métricas.
 ---
 
 A) Los datos a ingresar por cada empleado encuestado son:
+
 => nombre del empleado
 => edad(no menor a 18)
 => género(Masculino - Femenino - Otro)
 => tecnologia(IA, RV/RA, IOT)
+
 B) Cargar por terminal 10 encuestas.
 
 ---

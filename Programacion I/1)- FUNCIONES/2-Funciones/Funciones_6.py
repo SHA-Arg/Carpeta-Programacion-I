@@ -3,7 +3,7 @@
 # División: 112
 
 
-from Funciones_4 import solicitar_entero
+from Funciones_1 import solicitar_entero
 
 
 def verificar_par_o_impar(numero):

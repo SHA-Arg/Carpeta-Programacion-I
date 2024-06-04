@@ -2,19 +2,15 @@
 # Apellido : Hereñu Amaral
 # División: 112
 
-
-# 3° | Esta función solicita al usuario ingresar caracteres y retorna una cadena de caracteres de los ingresados.
-
-# FUNCION QUE SOLICITA UNA CADENA DE CARACTERES AL USUARIO
+from Funciones_4 import es_cadena
 
 
 def solicitar_cadena():
-    # VALIDACION DE INGRESO DE USUARIO
+
     while True:
         cadena = input("Ingrese los caracteres que quiera:")
-        if cadena != "":  # Compruebe si la entrada no está vacía.
+        if es_cadena(cadena):
             return cadena
-
         else:
             print("\n!#! Introduzca algun caracter al menos.\n")
 

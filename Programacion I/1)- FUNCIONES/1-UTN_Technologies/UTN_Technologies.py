@@ -29,14 +29,14 @@ tecnologia_mayor_edad = ""
 # -----------------------------------------------
 
 
-print(">>>                         ENCUESTA DE UTN TECHNOLOGIES                                        <<<\n")
+print(">>>  ENCUESTA DE UTN TECHNOLOGIES  <<<\n")
 for i in range(5):
     nombre_empleado = input("\n>> Ingrese el nombre de un empleado: ")
-    if nombre_empleado == "":
+    if nombre_empleado == "" or nombre_empleado == " ":
         nombre_empleado = input("\n<!> Ingrese un nombre de empleado: ")
 
     edad = input("\n>> Ingrese la edad (no menor a 18): ")
-    if edad < 18:
+    if edad < 18 or edad == "":
         edad = input("\n<!> Ingrese una edad valida (no menor a 18): ")
 
     genero = input("\n<!> Ingrese el genero (Masculino - Femenino - Otro): ")

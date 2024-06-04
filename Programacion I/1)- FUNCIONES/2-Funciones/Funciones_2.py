@@ -2,17 +2,7 @@
 # Apellido : Hereñu Amaral
 # División: 112
 
-
-def es_flotante(ingreso):
-
-    punto_ingresado = False
-    for caracter in ingreso:
-        if caracter == '.':
-            if punto_ingresado:
-                punto_ingresado = True
-        elif caracter not in ('-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'):
-            return False
-    return True
+from Funciones_4 import es_flotante
 
 
 def solicitar_flotante():
