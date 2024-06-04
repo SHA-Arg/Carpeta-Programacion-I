@@ -67,7 +67,7 @@ else:
 
 # Ejemplo:
 
-numero = 5
+numero = int(input('Ingrese un número: '))
 
 if numero is 5:
     print('El número es 5')
@@ -93,7 +93,7 @@ else:
 
 # Ejemplo de condicional anidado:
 
-numero = 5
+numero = int(input('Ingrese un número: '))
 
 if numero > 0:
     if numero < 10:
@@ -105,7 +105,10 @@ else:
 
 # Ejemplo de condicional con operador ternario:
 
-numero = 5
+# El operador ternario es una forma abreviada de escribir un condicional. Se utiliza para asignar un valor a una variable en función de una condición.
+# Sintaxis: valor1 if condicion else valor2
+
+numero = int(input('Ingrese un número: '))
 
 mensaje = 'El número es mayor que 0' if numero > 0 else 'El número no es mayor que 0'
 
@@ -113,7 +116,7 @@ print(mensaje)
 
 # Ejemplo de condicional con operador ternario anidado:
 
-numero = 5
+numero = int(input('Ingrese un número: '))
 
 mensaje = 'El número es mayor que 0 y menor que 10' if numero > 0 and numero < 10 else 'El número no es mayor que 0 o no es menor que 10'
 
