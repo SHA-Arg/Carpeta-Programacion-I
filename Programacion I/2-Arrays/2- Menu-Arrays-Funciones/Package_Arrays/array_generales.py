@@ -1,12 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 
 def get_numero(mensaje: str, mensaje_error: str, minimo: int, maximo: int, reintentos: int) -> int | None:

@@ -3,8 +3,6 @@
 # División: 112
 
 
-# Función que recibe una lista de enteros, la misma calculará y devolverá el promedio de todos los números.
-
 print("Funcion para calcular promedio de una lista de enteros")
 
 

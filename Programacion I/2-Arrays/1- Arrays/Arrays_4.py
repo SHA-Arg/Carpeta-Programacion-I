@@ -1,8 +1,6 @@
 # Nombre : Sebastian
 # Apellido : Hereñu Amaral
 # División: 112
-# -------------------------
-
 
 print("Funcion para calcular la posicion del valor maximo en una lista de enteros")
 

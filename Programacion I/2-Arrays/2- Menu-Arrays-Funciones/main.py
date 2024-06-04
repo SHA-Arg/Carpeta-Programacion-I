@@ -1,12 +1,6 @@
-'''
-----------------------------------
-#                                #
-# Nombre : Sebastian             #
-# Apellido : Hereñu Amaral       #
-# División: 112                  #
-#                                #
-----------------------------------
-'''
+# Nombre : Sebastian
+# Apellido : Hereñu Amaral
+# División: 112
 
 from os import system
 from Package_Arrays.array_generales import *
