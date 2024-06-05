@@ -1,6 +1,9 @@
 import random
 import turtle
 
+
+# Solo pueden avanzar si el numero ramdom es impar
+
 condicion_salida = 'continuar'
 
 while condicion_salida == 'continuar':
@@ -51,8 +54,14 @@ while condicion_salida == 'continuar':
         avanza_tortuga_1 = random.randint(1, 20)
         avanza_tortuga_2 = random.randint(1, 20)
 
+        if avanza_tortuga_1 % 2 == 0 or avanza_tortuga_2 % 2 == 0:
+            continue
+
         tortuga_1.forward(avanza_tortuga_1)
         tortuga_2.forward(avanza_tortuga_2)
+
+        print(f"Tortuga Roja: {
+              avanza_tortuga_1} - Tortuga Azul: {avanza_tortuga_2}")
 
         if tortuga_1.xcor() >= meta:
             print("Ganó la tortuga Roja!!")

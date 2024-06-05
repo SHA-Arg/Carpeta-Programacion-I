@@ -22,6 +22,7 @@ while continuar == True:
     print("7. Ordenar empleados")
     print("8. Reporte de Sueldos")
     print("9. Informe de Empleado")
+    print("10. Salir")
 
     opcion = solicitar_entero("Seleccione una opción: ", 1, 9)
 

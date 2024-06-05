@@ -1,4 +1,4 @@
-                #######  UTN TECHNOLOGIES  #########
+                #########  UTN TECHNOLOGIES  #########
 
 UTN Technologies, una reconocida software factory se encuentra en la búsqueda de ideas para su próximo desarrollo en Python, que promete revolucionar el mercado.
 
@@ -30,13 +30,13 @@ B) Cargar por terminal 10 encuestas.
 
 C) Determinar:
 
-    <=> Cantidad de empleados de género masculino que votaron por IOT o
+    => Cantidad de empleados de género masculino que votaron por IOT o
     IA, cuya edad esté entre 25 y 50 años inclusive.
 
-    <=> Porcentaje de empleados que no votaron por IA, siempre y cuando
+    => Porcentaje de empleados que no votaron por IA, siempre y cuando
     su género no sea Femenino o su edad se encuentre entre los 33 y 40.
 
-    <=> Nombre y tecnología que votó, de los empleados de género masculino
+    => Nombre y tecnología que votó, de los empleados de género masculino
     con mayor edad de ese género.
 
 ---
