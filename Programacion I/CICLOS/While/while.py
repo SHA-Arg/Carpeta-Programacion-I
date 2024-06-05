@@ -14,7 +14,9 @@ while condicion_salida == 'continuar':
 
     print(f"""
         Mensaje enviado por: {nombre}
+
         Correo: {correo}
+
         Mensaje: {mensaje}
         """)
 
