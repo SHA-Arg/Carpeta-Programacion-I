@@ -1,393 +1,78 @@
-# Funciones en Python
+# Explicacion y ejemplos de funciones en Python
+# En Python, una funcion es un bloque de codigo que realiza una tarea especifica. Las funciones se definen con la palabra clave def, seguida del nombre de la funcion y los parentesis que contienen los parametros de la funcion. Por ejemplo:
+#
+# def saludar():
+#     print("Hola, mundo!")
+#
+# En este caso, la funcion saludar imprime el mensaje "Hola, mundo!". Para llamar a una funcion, simplemente escribimos su nombre seguido de parentesis. Por ejemplo:
+#
+# saludar()
+# Output: Hola, mundo!
+
+# Las funciones pueden tener parametros, que son valores que se pasan a la funcion cuando se llama. Por ejemplo:
+
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+
+saludar("Juan")
+# Output: Hola, Juan!
+
+# En este caso, la funcion saludar tiene un parametro llamado nombre, que se utiliza para imprimir un saludo personalizado. Cuando se llama a la funcion, se pasa un valor al parametro nombre, que se utiliza para personalizar el saludo.
+
+# Las funciones pueden devolver un valor utilizando la palabra clave return. Por ejemplo:
+
 
 def suma(a, b):
     return a + b
 
 
-def resta(a, b):
-    return a - b
+resultado = suma(2, 3)
+print(resultado)
+# Output: 5
 
+# En este caso, la funcion suma recibe dos parametros, a y b, y devuelve la suma de los dos valores. Cuando se llama a la funcion, se asigna el resultado a una variable llamada resultado, que luego se imprime.
 
-def multiplicacion(a, b):
-    return a * b
 
+def sumar(numero1, numero2):
+    resultado = numero1 + numero2
+    return resultado
 
-def division(a, b):
-    return a / b
 
+resultado = sumar(5, 3)
+print(resultado)
+# Output: 8
 
-def potencia(a, b):
-    return a ** b
 
+# Las funciones pueden tener multiples parametros y devolver multiples valores. Por ejemplo:
 
-def raiz_cuadrada(a):
-    return a ** 0.5
+def operaciones(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    division = a / b
+    return suma, resta, multiplicacion, division
 
 
-def raiz_cubica(a):
-    return a ** (1/3)
+resultados = operaciones(5, 3)
+print(resultados)
+# Output: (8, 2, 15, 1.6666666666666667)
 
+# En este caso, la funcion operaciones recibe dos parametros, a y b, y devuelve cuatro valores: la suma, la resta, la multiplicacion y la division de los dos valores. Cuando se llama a la funcion, se asigna el resultado a una variable llamada resultados, que luego se imprime.
 
-def area_circulo(radio):
-    return 3.1416 * radio ** 2
 
+def calcular_precio(nombre_producto, cantidad, precio_unitario, descuento=0):
+    precio_final = cantidad * precio_unitario * (1 - descuento)
+    return nombre_producto, cantidad, precio_final
 
-def area_triangulo(base, altura):
-    return (base * altura) / 2
 
+nombre, cantidad, precio = calcular_precio("manzanas", 5, 2.5, 0.1)
+print(f"El precio final de {cantidad} unidades de {nombre} es: {precio}")
+# Output: El precio final de 5 unidades de manzanas es: 11.25
 
-def area_cuadrado(lado):
-    return lado ** 2
+# En este caso, la funcion calcular_precio recibe cuatro parametros: nombre_producto, cantidad, precio_unitario y descuento (este ultimo con un valor por defecto de 0). La funcion calcula el precio final de un producto teniendo en cuenta la cantidad, el precio unitario y el descuento, y devuelve el nombre del producto, la cantidad y el precio final. Cuando se llama a la funcion, se asignan los valores devueltos a las variables nombre, cantidad y precio, que luego se imprimen.
 
 
-def area_rectangulo(base, altura):
-    return base * altura
+# Las funciones en Python son una herramienta poderosa que nos permite reutilizar codigo y organizar nuestro programa de manera mas eficiente. Al definir funciones con parametros y valores de retorno, podemos crear bloques de codigo que realizan tareas especificas y devuelven resultados utiles. Esto nos permite escribir codigo mas limpio, legible y facil de mantener, lo que hace que nuestro programa sea mas facil de entender y de trabajar.
 
-
-def area_trapecio(base_mayor, base_menor, altura):
-    return ((base_mayor + base_menor) * altura) / 2
-
-
-def area_rombo(diagonal_mayor, diagonal_menor):
-    return (diagonal_mayor * diagonal_menor) / 2
-
-
-def area_poligono_regular(perimetro, apotema):
-    return (perimetro * apotema) / 2
-
-
-def area_cubo(lado):
-    return 6 * lado ** 2
-
-
-def area_cilindro(radio, altura):
-    return 2 * 3.1416 * radio * (radio + altura)
-
-
-def area_cono(radio, generatriz):
-    return 3.1416 * radio * (radio + generatriz)
-
-
-def area_esfera(radio):
-    return 4 * 3.1416 * radio ** 2
-
-
-def area_piramide_regular(perimetro_base, apotema_base, apotema_lateral):
-    return (perimetro_base * apotema_base) / 2 + perimetro_base * apotema_lateral
-
-
-def area_prisma_regular(perimetro_base, apotema_base, altura_prisma):
-    return 2 * (perimetro_base * apotema_base) + perimetro_base * altura_prisma
-
-# Funciones complementarias para el manejo de listas
-
-
-def promedio(lista):
-    suma = 0
-    for elemento in lista:
-        suma += elemento
-    return suma / len(lista)
-
-
-def mediana(lista):
-    lista.sort()
-    n = len(lista)
-    if n % 2 == 0:
-        mediana = (lista[n // 2] + lista[n // 2 - 1]) / 2
-    else:
-        mediana = lista[n // 2]
-    return mediana
-
-
-def moda(lista):
-    frecuencias = {}
-    for elemento in lista:
-        if elemento in frecuencias:
-            frecuencias[elemento] += 1
-        else:
-            frecuencias[elemento] = 1
-    maximo = max(frecuencias.values())
-    moda = [key for key in frecuencias if frecuencias[key] == maximo]
-    return moda
-
-
-def varianza(lista):
-    suma = 0
-    prom = promedio(lista)
-    for elemento in lista:
-        suma += (elemento - prom) ** 2
-    return suma / len(lista)
-
-
-def desviacion_estandar(lista):
-    return varianza(lista) ** 0.5
-
-
-def rango(lista):
-    return max(lista) - min(lista)
-
-
-def coeficiente_correlacion(lista1, lista2):
-    n = len(lista1)
-    suma_x = 0
-    suma_y = 0
-    suma_x2 = 0
-    suma_y2 = 0
-    suma_xy = 0
-    for i in range(n):
-        suma_x += lista1[i]
-        suma_y += lista2[i]
-        suma_x2 += lista1[i] ** 2
-        suma_y2 += lista2[i] ** 2
-        suma_xy += lista1[i] * lista2[i]
-    numerador = n * suma_xy - suma_x * suma_y
-    denominador = ((n * suma_x2 - suma_x ** 2) *
-                   (n * suma_y2 - suma_y ** 2)) ** 0.5
-    return numerador / denominador
-
-
-def covarianza(lista1, lista2):
-    n = len(lista1)
-    suma_x = 0
-    suma_y = 0
-    suma_xy = 0
-    for i in range(n):
-        suma_x += lista1[i]
-        suma_y += lista2[i]
-        suma_xy += lista1[i] * lista2[i]
-    return (n * suma_xy - suma_x * suma_y) / n
-
-
-def correlacion(lista1, lista2):
-    return covarianza(lista1, lista2) / (desviacion_estandar(lista1) * desviacion_estandar(lista2))
-
-
-def regresion_lineal(lista1, lista2):
-    n = len(lista1)
-    suma_x = 0
-    suma_y = 0
-    suma_x2 = 0
-    suma_xy = 0
-    for i in range(n):
-        suma_x += lista1[i]
-        suma_y += lista2[i]
-        suma_x2 += lista1[i] ** 2
-        suma_xy += lista1[i] * lista2[i]
-    a = (n * suma_xy - suma_x * suma_y) / (n * suma_x2 - suma_x ** 2)
-    b = (suma_y - a * suma_x) / n
-    return a, b
-
-
-def regresion_lineal_prediccion(a, b, x):
-    return a * x + b
-
-
-def regresion_lineal_error(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return suma / n
-
-
-def regresion_lineal_coeficiente_determinacion(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    suma_y = 0
-    for i in range(n):
-        suma_y += lista2[i]
-    prom_y = suma_y / n
-    suma_total = 0
-    suma_residual = 0
-    for i in range(n):
-        suma_total += (lista2[i] - prom_y) ** 2
-        suma_residual += (lista2[i] - a * lista1[i] - b) ** 2
-    return 1 - suma_residual / suma_total
-
-
-def regresion_lineal_coeficiente_correlacion(lista1, lista2):
-    return regresion_lineal_coeficiente_determinacion(lista1, lista2) ** 0.5
-
-
-def regresion_lineal_coeficiente_correlacion_cuadrado(lista1, lista2):
-    return regresion_lineal_coeficiente_determinacion(lista1, lista2)
-
-
-def regresion_lineal_coeficiente_correlacion_ajustado(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    k = 1
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return 1 - (suma / (n - k - 1)) / (varianza(lista2) * (n - 1) / (n - k))
-
-
-def regresion_lineal_coeficiente_correlacion_prediccion(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return (1 - (suma / (n - 2)) / varianza(lista2)) ** 0.5
-
-
-def regresion_lineal_coeficiente_correlacion_prediccion_cuadrado(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return 1 - (suma / (n - 2)) / varianza(lista2)
-
-
-def regresion_lineal_coeficiente_correlacion_prediccion_ajustado(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    k = 1
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return 1 - (suma / (n - k - 1)) / (varianza(lista2) * (n - 1) / (n - k))
-
-
-def regresion_lineal_coeficiente_correlacion_prediccion_ajustado_cuadrado(lista1, lista2):
-    a, b = regresion_lineal(lista1, lista2)
-    n = len(lista1)
-    k = 1
-    suma = 0
-    for i in range(n):
-        suma += (lista2[i] - a * lista1[i] - b) ** 2
-    return 1 - (suma / (n - k - 1)) / varianza(lista2)
-
-
-def diccionario_promedio(diccionario):
-    suma = 0
-    n = 0
-    for key in diccionario:
-        suma += diccionario[key]
-        n += 1
-    return suma / n
-
-
-def diccionario_mediana(diccionario):
-    lista = list(diccionario.values())
-    lista.sort()
-    n = len(lista)
-    if n % 2 == 0:
-        mediana = (lista[n // 2] + lista[n // 2 - 1]) / 2
-    else:
-        mediana = lista[n // 2]
-    return mediana
-
-
-def diccionario_moda(diccionario):
-    frecuencias = {}
-    for key in diccionario:
-        if diccionario[key] in frecuencias:
-            frecuencias[diccionario[key]] += 1
-        else:
-            frecuencias[diccionario[key]] = 1
-    maximo = max(frecuencias.values())
-    moda = [key for key in frecuencias if frecuencias[key] == maximo]
-    return moda
-
-
-def diccionario_varianza(diccionario):
-    suma = 0
-    prom = diccionario_promedio(diccionario)
-    n = 0
-    for key in diccionario:
-        suma += (diccionario[key] - prom) ** 2
-        n += 1
-    return suma / n
-
-
-def diccionario_desviacion_estandar(diccionario):
-    return diccionario_varianza(diccionario) ** 0.5
-
-
-def diccionario_rango(diccionario):
-    return max(diccionario.values()) - min(diccionario.values())
-
-
-def diccionario_coeficiente_correlacion(diccionario1, diccionario2):
-    n = 0
-    suma_x = 0
-    suma_y = 0
-    suma_x2 = 0
-    suma_y2 = 0
-    suma_xy = 0
-    for key in diccionario1:
-        if key in diccionario2:
-            suma_x += diccionario1[key]
-            suma_y += diccionario2[key]
-            suma_x2 += diccionario1[key] ** 2
-            suma_y2 += diccionario2[key] ** 2
-            suma_xy += diccionario1[key] * diccionario2[key]
-            n += 1
-    numerador = n * suma_xy - suma_x * suma_y
-    denominador = ((n * suma_x2 - suma_x ** 2) *
-                   (n * suma_y2 - suma_y ** 2)) ** 0.5
-    return numerador / denominador
-
-
-def diccionario_covarianza(diccionario1, diccionario2):
-    n = 0
-    suma_x = 0
-    suma_y = 0
-    suma_xy = 0
-    for key in diccionario1:
-        if key in diccionario2:
-            suma_x += diccionario1[key]
-            suma_y += diccionario2[key]
-            suma_xy += diccionario1[key] * diccionario2[key]
-            n += 1
-    return (n * suma_xy - suma_x * suma_y) / n
-
-
-def diccionario_correlacion(diccionario1, diccionario2):
-    return diccionario_covarianza(diccionario1, diccionario2) / (diccionario_desviacion_estandar(diccionario1) * diccionario_desviacion_estandar(diccionario2))
-
-
-def tupla_promedio(tupla):
-    suma = 0
-    for elemento in tupla:
-        suma += elemento
-    return suma / len(tupla)
-
-
-def tupla_mediana(tupla):
-    lista = list(tupla)
-    lista.sort()
-    n = len(lista)
-    if n % 2 == 0:
-        mediana = (lista[n // 2] + lista[n // 2 - 1]) / 2
-    else:
-        mediana = lista[n // 2]
-    return mediana
-
-
-def tupla_moda(tupla):
-    frecuencias = {}
-    for elemento in tupla:
-        if elemento in frecuencias:
-            frecuencias[elemento] += 1
-        else:
-            frecuencias[elemento] = 1
-    maximo = max(frecuencias.values())
-    moda = [key for key in frecuencias if frecuencias[key] == maximo]
-    return moda
-
-
-def tupla_varianza(tupla):
-    suma = 0
-    prom = tupla_promedio(tupla)
-    for elemento in tupla:
-        suma += (elemento - prom) ** 2
-    return suma / len(tupla)
-
-
-def tupla_desviacion_estandar(tupla):
-    return tupla_varianza(tupla) ** 0.5
+# En resumen, las funciones en Python son bloques de codigo que realizan tareas especificas. Las funciones se definen con la palabra clave def, seguida del nombre de la funcion y los parentesis que contienen los parametros de la funcion. Las funciones pueden tener parametros y devolver valores utilizando la palabra clave return. Al definir funciones con parametros y va lores de retorno, podemos reutilizar codigo, organizar nuestro programa de manera mas eficiente y escribir codigo mas limpio, legible y facil de mantener.
