@@ -49,7 +49,12 @@ while continuar == True:
         system("cls")
     elif opcion == 8:
         print("Saliendo del programa.")
-        break
+        system("cls")
+    elif opcion == 9:
+        pass
+    elif opcion == 10:
+        print("Saliendo del programa.")
+        continuar = False
     else:
         print("Opción inválida. Intente nuevamente.")
     condicion_salida = input('Desea continuar? (continuar/salir): ')

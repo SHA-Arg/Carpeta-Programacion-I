@@ -48,25 +48,26 @@ print(lista)
 # pop un elemento de la lista por su indice
 print(lista)
 print(lista.pop(3))
+print(lista.pop())
 print(lista)
 
-# Remover un elemento de la lista por su valor
-print(lista)
-lista.remove(0)
-print(lista)
+# # Remover un elemento de la lista por su valor
+# print(lista)
+# lista.remove(0)
+# print(lista)
 
-# Revertir la lista
-print(lista)
-lista.reverse()
-print(lista)
+# # Revertir la lista
+# print(lista)
+# lista.reverse()
+# print(lista)
 
-# clear vaciar la lista
-print(lista)
-lista.clear()
-print(lista)
+# # clear vaciar la lista
+# print(lista)
+# lista.clear()
+# print(lista)
 
-# Sort Ordenar la lista de menor a mayor
-lista = [8, 4, 3, 10, 5]
-print(lista)
-lista.sort()
-print(lista)
+# # Sort Ordenar la lista de menor a mayor
+# lista = [8, 4, 3, 10, 5]
+# print(lista)
+# lista.sort()
+# print(lista)
