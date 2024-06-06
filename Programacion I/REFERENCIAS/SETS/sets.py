@@ -90,7 +90,7 @@ set1 = {1, 2, 3, 4, 5}
 set2 = {6, 7, 8, 9, 10}
 es_disjoint = set1.isdisjoint(set2)
 
-# frozenset es un set inmutable y mejora la eficiencia en memoria
+# frozenset es un set inmutable y mejora la eficiencia en memoria pero no permite agregar o eliminar elementos
 
 frozen_set = frozenset([1, 2, 3, 4, 5])
 print(frozen_set)
