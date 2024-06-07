@@ -1,6 +1,4 @@
-import re
 import json
-from datetime import datetime
 
 
 # esta funcion se encarga de validar los datos ingresados por el usuario y de crear un diccionario con los datos ingresados por el usuario para luego agregarlo a la lista de empleados que se pasa como parametro a la funcion validar y se encarga de validar que el usuario no ingrese mas de 20 empleados y de preguntarle al usuario si desea ingresar otro empleado y de agregarlo a la lista de empleados que se pasa como parametro a la funcion validar y de devolver None al final de la funcion validar.
