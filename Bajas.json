@@ -6,5 +6,13 @@
         "Nombre": "Sebas",
         "Apellido": "Amaral",
         "Puesto": "Gerente"
+    },
+    {
+        "ID": 1,
+        "DNI": 5000002,
+        "Salario": 12343242,
+        "Nombre": "Sebastian",
+        "Apellido": "Amaral",
+        "Puesto": "Asistente"
     }
 ]
