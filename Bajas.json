@@ -1,0 +1,10 @@
+[
+    {
+        "ID": 1,
+        "DNI": 12312331,
+        "Salario": 123123123,
+        "Nombre": "Sebas",
+        "Apellido": "Amaral",
+        "Puesto": "Gerente"
+    }
+]
